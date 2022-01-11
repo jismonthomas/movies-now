@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--dark-card-level-1-background)
+}
+
+.footer a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.footer a img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.footer, .footerItems a {
+    color: grey;
+}
+
+.credit {
+font-size: .8rem;
+}

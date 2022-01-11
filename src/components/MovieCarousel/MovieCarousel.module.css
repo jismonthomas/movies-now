@@ -1,0 +1,36 @@
+.card {
+    max-width: 400px;
+    background: var(--dark-gradient-background);
+    height: auto;
+}
+
+.carouselHeading a {
+text-decoration: none;
+color: white;
+display: flex;
+align-items: center;
+}
+
+.carouselLinkHelper {
+    font-size: .8vw;
+    margin-left: 2px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    -ms-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+}
+
+.carouselHeading a:hover .carouselLinkHelper {
+    opacity: 1;
+    margin-left: 10px;
+}
+
+@media (max-width: 575.98px) { 
+    .card {
+        max-width: 90%;
+    }
+ }

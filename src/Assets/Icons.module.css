@@ -1,0 +1,29 @@
+.heart {
+    fill: grey;
+    stroke:none;
+}
+
+.heartFill {
+    fill: white;
+}
+
+.star {
+    fill:var(--gradient-color-2);
+    stroke: none;
+}
+
+.closeIcon {
+    stroke-width: 2;
+    stroke: white;
+}
+
+.play { 
+    fill: currentColor; 
+    margin-left: 2px;
+}
+
+.arrowRight {
+    stroke-width: 2;
+    stroke: white;
+    fill: none;
+}

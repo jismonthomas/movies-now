@@ -1,13 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+  --dark-background: #111114;
+  --dark-card-level-1-background: #1d1d23;
+  --dark-card-level-2-background: #28282d;
+  --dark-gradient-background: linear-gradient(24deg, #1a1a1e 40%, #2f2f36);
+  --gold: #e4a804;
+  --gradient-color-1:#90cea1;
+  --gradient-color-2:#07b4e2;
+}
+
 body {
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.toastWrapper {
+  z-index: 1
+}
+
+.loadingContainer {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.placeholder-glow {
+  width: 100%;
+  min-width: 100px;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+body {
+background-color: var(--dark-background);
+color: white;
+}
+
+main {
+min-height: 90vh;
+}
+
+.card {
+  background-color: var(--dark-card-level-1-background);
+}
+
+.modal-content {
+  background-color: var(--dark-card-level-2-background);
+}
+
+.modal-backdrop {
+  background-color: #141414;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.navbar-brand{
+  font-family: 'Bebas Neue', cursive;
+}
+
+.btn-search {
+  background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
+  color: white;
+}
+
+.movieRow .cardWrapper:last-child {
+  margin-right: auto;
+}
+
+.carouselPagination .swiper-pagination-bullet {
+  background-color:#72728e;
+  border-radius: 1px;
+  height: 2px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+
+.carouselPagination .swiper-pagination-bullet-active {
+  background: grey;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: white !important;
+  height: 100% !important;
+  top: 0 !important;
+  margin-top: 0 !important;
+  min-width: 4%;
+}
+
+.swiper-button-next {
+  background: linear-gradient(
+    270deg, #1111149e, transparent);
+  right: 0 !important;
+}
+
+.swiper-button-prev {
+  background: linear-gradient(
+    90deg, #1111149e, transparent);
+  left: 0 !important;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.05 !important;
+}
+
+.card img {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: transform 300ms ease;
+  -webkit-transition: transform 300ms ease;
+  -moz-transition: transform 300ms ease;
+  -ms-transition: transform 300ms ease;
+  -o-transition: transform 300ms ease;
+}
+
+.swiper-slide.card img, .searchResults img  {
+  max-height: 176px;
+  min-width: 100px;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.cardWrapper {
+  max-width: 366px;
+  background: var(--dark-gradient-background);
+  height: auto;
+  margin: 15px;
+  flex-basis: 100%;
+}
+
+.pageHeader {
+  min-height: 80vh;
+}
+
+.pageHeader .modal-title {
+  font-size: clamp(3.5rem,4.17vw,5rem);
+}
+
+.pageModal .modal-title {
+  font-size: clamp(2.5rem,3vw, 5rem);
+  line-height: 1;
+}
+
+.movieRating {
+  border-radius: 3px;
+  font-size: .9rem;
+  font-weight: 500;
+  padding: 1px 5px;
+}
+
+.tmdbRating {
+  background: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
+  color: var(--dark-card-level-2-background);
+}
+
+.btn-close {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background: black;
+  margin: 10px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.form-control {
+  border: none;
+  background-color: var(--dark-card-level-2-background);
+  color: white;
+  transition: background-color 300ms ease;
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  -ms-transition: background-color 300ms ease;
+  -o-transition: background-color 300ms ease;
+}
+
+nav a.active {
+  color: grey !important;
+}
+
+@media (min-width: 1700px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1608px;
+}
+}
+
+@media (max-width: 575.98px) { 
+  .swiper-slide.card img, .searchResults img  {
+    max-height: none;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .position-xs-relative {
+    position: relative !important;
+  }
 }

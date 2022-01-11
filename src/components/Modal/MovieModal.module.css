@@ -1,0 +1,34 @@
+.modalContent {
+    max-width: 850px;
+}
+
+.modalContent ::-webkit-scrollbar {
+    display: none;
+  }
+
+.movieQuickInfo span {
+    margin-right: 10px;
+}
+
+.movieQuickInfo span:empty {
+    display: none;
+}
+
+.movieQuickInfo span:last-of-type {
+    margin-right: 0;
+}
+
+.moviePeople {
+    font-size: .9rem;
+}
+
+.movieSmallDetails {
+    margin-right: 5px;
+    color: #b4b4b5;
+}
+
+@media (min-width: 991px) {
+    .modalDialog {
+        max-width: 850px;
+    }
+}

@@ -1,0 +1,102 @@
+.moviePreviewHeader {
+    min-height: 50vh;
+}
+
+.noBackdrop {
+    min-height: 10vh;
+    padding: 2rem 0;
+    background-image: url(../../Assets/DefaultMoviePoster.jpg);
+}
+
+.moviePreviewHeader::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, black, transparent 60%);
+    position: absolute;
+}
+.moviePreviewHeader h1 {
+    font-size: clamp(3.5rem,4.17vw,5rem);
+}
+.pageModal h1 {
+    font-size: 1rem;
+}
+.moviePreviewHeaderInfo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    z-index: 9;
+    position: relative;
+    justify-content: center;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.genreList span {
+    margin-right: 30px;
+}
+
+.genreList span:last-of-type::after {
+    display: none
+}
+
+.genreList span::after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.movieTrailer {
+    text-decoration: none;
+    background: white;
+    color: var(--dark-card-level-2-background);
+    display: inline-block;
+    padding: 7px 13px;
+    margin-right: 1rem;
+    transition: background 300ms ease, color 300ms ease, shadow 30ms ease;
+    -webkit-transition: background 300ms ease, color 300ms ease, shadow 30ms ease;
+    -moz-transition: background 300ms ease, color 300ms ease, shadow 30ms ease;
+    -ms-transition: background 300ms ease, color 300ms ease, shadow 30ms ease;
+    -o-transition: background 300ms ease, color 300ms ease, shadow 30ms ease;
+}
+
+.movieTrailer:hover {
+    background: var(--gradient-color-2);
+    color: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.movieTrailerDisabled {
+    pointer-events: none;
+    opacity: .65;
+    background: #6c757d;
+}
+
+.moviePreviewHeaderPoster img {
+    max-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    object-fit: cover;
+    bottom: 0;
+    left: 50%;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}

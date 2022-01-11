@@ -1,0 +1,38 @@
+
+nav {
+    background-image: linear-gradient(180deg, var(--dark-card-level-1-background), transparent);
+}
+
+nav a {
+color: white !important;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+}
+
+nav.secondaryNav::after {
+    background: var(--dark-card-level-1-background);
+}
+
+nav:not(.secondaryNav) input {
+    background-color: white !important;
+    color: var(--dark-background) !important;
+}
+
+@media (max-width: 991.98px) { 
+    nav {
+        background-image: linear-gradient(180deg, var(--dark-card-level-1-background), var(--dark-card-level-1-background));
+    }
+  }
