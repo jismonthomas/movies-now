@@ -1,8 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useDispatch } from "react-redux";
-import { useNavigate, useSearchParams } from "react-router-dom";
-import { requests } from "../../constants/constants";
+import { useNavigate } from "react-router-dom";
 import { fetchData } from "../../store/movie-actions";
 
 import { uiActions } from "../../store/ui-slice";

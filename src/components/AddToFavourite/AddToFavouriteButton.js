@@ -1,12 +1,11 @@
 
 import { moviesActions } from '../../store/movie-slice';
-import { shallowEqual, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 
 
 import { Heart, HeartFill } from '../../Assets/Icons';
 import classes from './AddToFavourite.module.css';
-import { useEffect, useState } from 'react';
 
 const AddToFavouriteButton = ({ movie, size: buttonSize, theme, loading = false }) => {
 

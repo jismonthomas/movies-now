@@ -57,7 +57,7 @@ const Header = ({ fetchUrl }) => {
             movieDetails();
 
         }
-    }, []);
+    }, [fetchUrl]);
 
     return (
         <header className="pageHeader">
