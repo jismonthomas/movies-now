@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Movies Now
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movies Now is a react app to search for movies and add them to your list. This app uses data from [TMDB](https://www.themoviedb.org/documentation/api)
+API.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+Currently hosted on Netlify, please click link to see the live site : [Live Demo](https://movies-now-react.netlify.app/)
 
-### `npm start`
+## Features
+* Home page header features a randomly selected upcoming movies with its genres and link to youtube trailer.
+* Scroll through featured movie lists on home page.
+* Each movie card shows the movie poster, released year, a short description & TMDB rating.
+* Clicking on movie card opens a modal with a custom url showing the poster, title, genres, link to YouTube trailer, button to save the movie to your list, released year, length of the movie, TMDB rating, status of the movie (whether it is released or not) and names of production companies.
+* Clicking on heading of lists on homepage also shows all movies in that corresponding list.
+* Browing each category/list of movies renders the movies in a "infinte scroll" manner. i.e. App renders first 20 results when you open the page and as you scroll down to the bottom more movies are fetched from the API and rendered to the screen.
+* When you add movies to your list, it is saved on the redux store as well as local storage, so the next time you visit the website your movie lists are automatically fetched from the local storage.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Preview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Movies-Now-React](https://user-images.githubusercontent.com/17625782/149066346-813d3972-047a-4e1c-b602-ae6ed0b49f38.png)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://user-images.githubusercontent.com/17625782/149072659-38a86c4b-fb1f-4486-8f9c-ee0dcbaefeea.mp4
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
