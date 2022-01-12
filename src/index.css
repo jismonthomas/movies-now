@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
   --dark-background: #111114;
@@ -202,7 +202,7 @@ code {
 }
 
 nav a.active {
-  color: grey !important;
+  font-weight: 700;
 }
 
 @media (min-width: 1700px) {
