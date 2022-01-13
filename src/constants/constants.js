@@ -16,5 +16,6 @@ export const requests = {
         search: `${API_BASE_URL}search/movie?api_key=${API_KEY}&language=en-US&include_adult=false&query=`,
         horror: `${API_BASE_URL}discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&page=1&with_genres=27`,
         romance: `${API_BASE_URL}discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&page=1&with_genres=10749`,
+        comedy: `${API_BASE_URL}discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&page=1&with_genres=35`,
     }
 }
