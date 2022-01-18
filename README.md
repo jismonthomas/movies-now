@@ -3,6 +3,8 @@
 Movies Now is a react app to search for movies and add them to your list. This app uses data from [TMDB](https://www.themoviedb.org/documentation/api)
 API.
 
+Built using react, react hooks, redux, redux toolkit & Bootstrap
+
 ## Demo
 
 Currently hosted on Netlify, please click link to see the live site : [Live Demo](https://movies-now-react.netlify.app/)
